@@ -1,12 +1,12 @@
 <div id="title">
   <h1>
-    {% if site.git %}
+    {% unless site.git == "" %}
       <a id="git-ic" href="{{site.git}}"><i class="fa fa-github"></i></a>
-    {% endif %}
+    {% endunless %}
 
-    {% if site.stackoverflow %}
+    {% unless site.stackoverflow == "" %}
       <a id="so-ic" href="{{site.stackoverflow}}"><i class="fa fa-stack-overflow"></i></a>
-    {% endif %}
+    {% endunless %}
     <a id="sitename" href="/">railsr.github.io</a>
   </h1>
 <div style="block">
