@@ -4,8 +4,7 @@ tags: [git]
 ---
 
 
-So here're the steps of how to contribute to someone's git repo:
-
+So here're the steps of how to contribute to someone's git repo:<br />
 1) Fork a repo. 2) Clone it. 3) Create a branch. 4) Make some changes. 5) Commit. 6) Push.
 
 {% highlight Bash shell scripts %}
@@ -17,7 +16,6 @@ git push origin new-branch-name
 
 
 Some other commands:
-
 {% highlight Bash shell scripts %}
 git branch -r 
 git status
