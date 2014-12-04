@@ -3,7 +3,7 @@ url: "railsr.github.io" # the base hostname & protocol for your site.
 title: "railsr"
 
 
-paginate: 3 #articles per page
+paginate: 4 #articles per page
 paginate_path: /blog/page:num
 
 
