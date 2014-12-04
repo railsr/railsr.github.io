@@ -1,6 +1,6 @@
 ---
 title: "Introducing Autm-rb: A Bootstrap-Based Jekyll Theme"
-tags: [Autm-rb, download]
+tags: [autm-rb]
 ---
 
 ![Autumn-rb](http://scontent-a.cdninstagram.com/hphotos-xpa1/t51.2885-15/10561076_278209769029508_1423568667_n.jpg)
