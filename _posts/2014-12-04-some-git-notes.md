@@ -38,5 +38,5 @@ Some other git commands:
 {% highlight Bash  %}
 git branch -r #shows remote branches
 git status #shows changed files before commit
-git diff master..origin/master #diff between 2 br
+git diff master..origin/master #diff between local and remote br
 {% endhighlight %}
