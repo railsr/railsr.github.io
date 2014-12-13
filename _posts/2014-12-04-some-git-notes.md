@@ -17,7 +17,13 @@ When you need to reset back to previously commited changes do the following:
 git reset --hard 9cf35dd8
 git push --force origin master
 {% endhighlight %}
+
 Destroys all local modifications, uncommited work. And will also reset the remote branch.
+{% highlight Bash  %}
+git reset --hard # removes staged and working directory changes
+git clean -f -d # remove untracked files
+git clean -f -x -d # CAUTION: as above but removes ignored files like config.
+{% endhighlight %}
 
 If you don't want to break branch history but want to revert commited changes, use "revert".
 {% highlight Bash  %}
