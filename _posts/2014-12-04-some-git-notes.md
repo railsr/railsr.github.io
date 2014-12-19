@@ -3,35 +3,33 @@ title: "Some git notes"
 tags: [git]
 ---
 
-Basically to contribute to a git repo you just have to follow these steps:<br/>
-1) Fork a repo. 2) Clone it. 3) Create a branch. 4) Make some changes. 5) Commit. 6) Push.
+Basics:<br/>
 {% highlight Bash shell scripts %}
 git clone https://github.com/your-username/forked-repo-name
 git checkout -b new-branch-name
 git commit -a -m "commit message"
 git push origin new-branch-name
 {% endhighlight %}
+then pull request.
 
-When you need to reset back to previously commited changes do the following:
+"git reset" will reset back to previously committed/pushed changes. It rewrites commit history, destroys all local modifications and uncommitted work. And will also reset the remote branch.
 {% highlight Bash  %}
 git reset --hard 9cf35dd8
 git push --force origin master
 {% endhighlight %}
 
-Destroys all local modifications, uncommited work. And will also reset the remote branch.
 {% highlight Bash  %}
 git reset --hard # removes staged and working directory changes
 git clean -f -d # remove untracked files
 git clean -f -x -d # CAUTION: as above but removes ignored files like config.
 {% endhighlight %}
 
-If you don't want to break branch history but want to revert commited changes, use "revert".
+"git revert" allows to revert committed changes.
 {% highlight Bash  %}
 git revert 9cf35dd8
 {% endhighlight %}
 
-If you want to keep your work before resetting use "git stash". 
-Then after reset you can drop saved changes with "git drop" or bring them back with "git pop".
+"git stash" allows to keep work before resetting/deleting... a branch. After reset/delete... saved changes can be destroyed with "git drop" or applied to new a branch with "git pop".
 
 {% highlight Bash %}
 git stash
