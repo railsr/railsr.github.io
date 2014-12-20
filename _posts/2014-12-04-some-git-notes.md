@@ -43,4 +43,5 @@ Some other git commands:
 git branch -r #shows remote branches
 git status #shows changed files before commit
 git diff master..origin/master #diff between local and remote br
+git log --all --graph --decorate --oneline --abbrev-commit
 {% endhighlight %}
