@@ -1,5 +1,5 @@
 ---
-title: "Highlight error form field with inline error message in rails."
+title: "Highlight error form field with inline error message in rails"
 tags: [ruby on rails]
 ---
 
