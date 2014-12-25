@@ -1,20 +1,20 @@
 <div id="title">
-  <h1>
-    {% unless site.git == "" %}
-      <a id="git-ic" href="{{site.git}}"><i class="fa fa-github"></i></a>
-    {% endunless %}
+	<h1>
+		{% unless site.git == "" %}
+		<a id="git-ic" href="{{site.git}}"><i class="fa fa-github"></i></a>
+		{% endunless %}
 
-    {% unless site.stackoverflow == "" %}
-      <a id="so-ic" href="{{site.stackoverflow}}"><i class="fa fa-stack-overflow"></i></a>
-    {% endunless %}
-    <a id="sitename" href="/">railsr.github.io</a>
-  </h1>
+		{% unless site.stackoverflow == "" %}
+		<a id="so-ic" href="{{site.stackoverflow}}"><i class="fa fa-stack-overflow"></i></a>
+		{% endunless %}
+		<a id="sitename" href="/">railsr.github.io</a>
+	</h1>
 
-  <!-- Add something about you in p tag-->
-  <p>Hello, my name is Kirill. I'm learning Ruby on Rails and other web stuff...</p>
-  <hr/>
+	<!-- Add something about you in p tag-->
+	<p>Hello, my name is Kirill. I'm learning Ruby on Rails and other web stuff...</p>
+	<hr/>
   
-  {% include nav-links.html %} 
+	{% include nav-links.html %} 
   
 </div>
 
