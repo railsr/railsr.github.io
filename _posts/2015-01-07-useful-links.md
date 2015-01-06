@@ -5,6 +5,6 @@ tags: [notes]
 
 ruby algoritms:
 
-![](http://www.kanwei.com/algorithms/)
+![a](http://www.kanwei.com/algorithms/)
 
-![](https://github.com/sagivo/algorithms)
+![a](https://github.com/sagivo/algorithms)
