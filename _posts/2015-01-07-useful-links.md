@@ -3,7 +3,7 @@ title: "Useful links"
 tags: [notes]
 ---
 
-ruby algoritms:
+ruby algorithms:
 
 [http://www.kanwei.com/algorithms/](http://www.kanwei.com/algorithms/)
 
