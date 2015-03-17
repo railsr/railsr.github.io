@@ -3,8 +3,8 @@ title: "Useful links"
 tags: [notes]
 ---
 
-ruby algoritms:
+ruby algorithms:
 
-![a](http://www.kanwei.com/algorithms/)
+[http://www.kanwei.com/algorithms/](http://www.kanwei.com/algorithms/)
 
-![a](https://github.com/sagivo/algorithms)
+[https://github.com/sagivo/algorithms](https://github.com/sagivo/algorithms)
