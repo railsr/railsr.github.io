@@ -12,6 +12,11 @@ git: "https://github.com/railsr"  #Add your github url here.
 stackoverflow: "http://stackoverflow.com/users/1231365/railsr" #Add your stackoverflow url here.
 twitter: "https://twitter.com/railsr7"  #Add your twitter url here.
 
+disqus: 
+  shortname: "railsr"
+
+google: 
+  tracking-id: "UA-55372257-1"
 
 gems:
   - jekyll-sitemap
