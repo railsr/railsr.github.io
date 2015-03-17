@@ -21,7 +21,7 @@ tags: [notes]
     </tr>
     <tr>
       <td>yml formatter</td>
-      <td><a href="https://github.com/sagivo/algorithms">http://www.yamllint.com/</a></td>
+      <td><a href="http://www.yamllint.com/">http://www.yamllint.com/</a></td>
     </tr>
   </tbody>
 </table>
