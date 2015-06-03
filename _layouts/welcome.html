@@ -19,9 +19,11 @@
 	<body>
 		<div class="wrapper">          
 			<section>               
-				{% include title.html %}
+				
           
-				{{ content }}      
+				{{ content }} 
+        
+        {% include title.html %}     
 			</section>
 		</div>   
 		<script src="{{ "/public/javascripts/jquery.min.js" | prepend:site.baseurl }}"></script>
