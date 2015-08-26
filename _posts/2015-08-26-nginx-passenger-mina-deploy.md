@@ -1,6 +1,6 @@
 ---
 title: "Nginx Passenger Mina. Deploy rails app to Ubuntu. DO"
-tags: [notes, rails]
+tags: [notes, deploy, rails, ubuntu]
 ---
 
 #need some editing (not finished)

@@ -1,6 +1,6 @@
 ---
 title: "Digital Ocean ubuntu setup commands short list"
-tags: [notes, deploy, rails]
+tags: [notes, ubuntu]
 ---
 
 A list of steps on how to make ubuntu initial setup on DO (without description).
