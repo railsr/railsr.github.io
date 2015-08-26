@@ -152,7 +152,7 @@ Then run `mina deploy` or `mina deploy --verbose`
 
 ##Configure Nginx
 
-If you want to host a few apps on your server you can create a separate ngix config file for your app. Or just use the default config file. `/etc/nginx/sites-enabled/default`
+If you want to host a few apps on your server you can create a separate nginx config file for your app. Or just use the default. `/etc/nginx/sites-enabled/default`
 
 
 Inside `/etc/nginx/sites-enabled/` create a config file of your website `myapp.conf`
