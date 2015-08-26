@@ -169,7 +169,7 @@ server {
 
     # Turn on Passenger
     passenger_enabled on;
-    passenger_ruby /home/deploy/.rvm/gems/ruby-2.2.2/wrappers/ruby;
+    passenger_ruby /home/username/.rvm/gems/ruby-2.2.2/wrappers/ruby;
 }
 {% endhighlight %}    
 
