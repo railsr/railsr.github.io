@@ -3,8 +3,6 @@ title: "Nginx Passenger Mina. Deploy rails app to Ubuntu. DO"
 tags: [notes, deploy, rails, ubuntu]
 ---
 
-#need some editing (not finished)
-
 Here's how I deployed a simple rails app to DO droplet with Ubuntu 14.4. 
 
 It's preferable to buy $10 droplet or higher.

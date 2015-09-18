@@ -10,6 +10,7 @@ paginate_path: /blog/page:num
 #contacts
 git: "https://github.com/railsr"  #Add your github url here.
 stackoverflow: "http://stackoverflow.com/users/1231365/railsr" #Add your stackoverflow url here.
+linkedin: "https://www.linkedin.com/pub/kirill-beletskiy/102/948/63a"
 twitter: "https://twitter.com/railsr7"  #Add your twitter url here.
 
 disqus: 
