@@ -34,8 +34,9 @@ searchkick autocomplete: ['title']
 
   def autocomplete
     render json: Build.search(params[:query], autocomplete: false, limit: 10)#(&:title) 
-    #had to comment out (&:title) because the search autocomplete displayed the full hash of object.
-    #displayKey used insted(see below)
+    #had to comment out (&:title) because the search suggested items displayed as a the full hash of object.
+    #displayKey used instead(see below)
+    #the problem is probably with cancancan gem since the authenticated user can see the proper name of suggested items.
   end
 {% endhighlight %}
 
