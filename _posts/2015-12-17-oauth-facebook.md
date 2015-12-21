@@ -1,5 +1,5 @@
 ---
-title: "oauth-facebook with devise"
+title: "Oauth-facebook with devise"
 tags: [notes, rails]
 ---
 
