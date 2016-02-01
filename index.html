@@ -1,10 +1,16 @@
 ---
-layout: welcome
-
+layout: default
+title: "Posts"
 ---
- 
-<div class="text-center">
-  <img class="pln-img" src="{{"/public/images/b7.png" | prepend:site.baseurl}}" >
-  <!-- <p><a href="mailto:railsr@yahoo.com">railsr (at) yahoo.com</a></p> -->
-</div>
 
+<section class="content">
+  <ul class="listing">
+    {% for post in site.posts %}
+      {% unless post.draft %}
+      <li>
+        <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+      {% endunless %}
+    {% endfor %}
+  </ul>
+</section>

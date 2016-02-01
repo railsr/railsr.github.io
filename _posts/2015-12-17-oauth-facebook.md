@@ -1,11 +1,9 @@
 ---
-title: "Oauth-facebook with devise"
-tags: [notes, rails]
+layout: post
+title: Oauth-facebook with devise
+category: posts
 ---
-
 Quick notes on how to add facebook authentication to rails app.
-
-
 
 {% highlight ruby %}
 
@@ -33,27 +31,23 @@ def self.from_omniauth(auth)
       user.save
     end
 end
-
 {% endhighlight %}
 
 {% highlight ruby %}
-
 #devise.rb
 
-config.omniauth :facebook, ENV['facebook_key'], ENV['facebook_secret'], scope: 'email,public_profile', info_fields: 'email, first_name, last_name'
-  
+config.omniauth :facebook, ENV['facebook_key'], ENV['facebook_secret'],
+ scope: 'email,public_profile', info_fields: 'email, first_name, last_name'
 {% endhighlight %}
 
 {% highlight ruby %}
-
 #callbacks_controller.rb
-
 
 class CallbacksController < ApplicationController
   def facebook
     @user = User.from_omniauth(request.env["omniauth.auth"])
     if @user.persisted?
-      sign_in_and_redirect @user, :event => :authentication #this will throw if @user is not activated
+      sign_in_and_redirect @user, :event => :authentication
       flash[:notice] = "Logged in as #{@user.username}"      
     else
       session["devise.facebook_data"] = request.env["omniauth.auth"]
@@ -69,18 +63,15 @@ end
 
 
 {% highlight ruby %}
-
 #routes.rb
 
 devise_for :users, controllers: { omniauth_callbacks: "callbacks" }
-end
 {% endhighlight %}
- 
- 
- {% highlight ruby %}
 
-#_links.html.erb
- 
+{% highlight erb %}
+
+<%#_links.html.erb%>
+
 <%- if devise_mapping.omniauthable? %>
   <%- resource_class.omniauth_providers.each do |provider| %>
     <%= link_to omniauth_authorize_path(resource_name, provider), class: "btn btn-blue btn-block" do %>
@@ -88,9 +79,4 @@ end
     <% end %><br />
   <% end -%>
 <% end -%>
- 
- 
 {% endhighlight %}
-
-
-

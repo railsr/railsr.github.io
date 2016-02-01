@@ -1,15 +1,15 @@
 ---
-title: "Searchkick with typeahead"
-tags: [notes, rails]
+layout: post
+title: Setup searchkick with typeahead in a rails app
+category: posts
 ---
 
-Adding searchkick with typeahead
+Adding searchkick with typeahead to a rails app
 
 ![Imgur](http://i.imgur.com/bq95WFR.png)
 
 
-[searchkick](https://github.com/ankane/searchkick)
-
+[searchkick](https://github.com/ankane/searchkick) /
 [typeahead.js](https://github.com/twitter/typeahead.js/)
 
 typeahead.bundle.min.js
@@ -18,7 +18,7 @@ typeahead.bundle.min.js
 {% highlight ruby %}
 #build.rb
 
-searchkick autocomplete: ['title'] 
+searchkick autocomplete: ['title']
 {% endhighlight %}
 
 {% highlight ruby %}
@@ -33,15 +33,17 @@ searchkick autocomplete: ['title']
   end
 
   def autocomplete
-    render json: Build.search(params[:query], autocomplete: false, limit: 10)#(&:title) 
-    #had to comment out (&:title) because the search suggested items displayed as a the full hash of object.
+    render json: Build.search(params[:query], autocomplete: false, limit: 10)#(&:title)
+    #had to comment out (&:title) because the search suggested items
+    #were displayed as a full hash of an object.
     #displayKey used instead(see below)
-    #the problem is probably with cancancan gem since the authenticated user can see the proper name of suggested items.
+    #the problem is probably with cancancan gem
+    #since the authenticated user can see the proper name of suggested items.
   end
 {% endhighlight %}
 
-{% highlight ruby %}
-#form
+{% highlight erb %}
+<%#form%>
 
   <%= form_tag builds_path, method: :get, class:"input-group" do %>
     <%= text_field_tag :query, params[:query], class: "form-control typeahead", id: "build_search"%>
@@ -54,14 +56,14 @@ searchkick autocomplete: ['title']
 
 {% endhighlight %}
 
-{% highlight bash %}
+{% highlight javascript %}
 
-#application.js
+//application.js
 
 jQuery(function($) {  
   var $vartypeahead = $('#build_search');
   var engine = new Bloodhound({
-    remote: { 
+    remote: {
         url: "/builds/autocomplete?query=%QUERY",
         wildcard: "%QUERY"
     },
@@ -76,12 +78,9 @@ jQuery(function($) {
   },
   {  
     displayKey: function(build){ return build.name+': '+build.spec},
-    #check def autocomplete above for explanation
+    //check def autocomplete above for explanation
     "source": engine.ttAdapter()
-    }); 
+    });
 });
- 
+
 {% endhighlight %}
-
-
-

@@ -1,15 +1,77 @@
 ---
-title: "Nginx Passenger Mina. Deploy rails app to Ubuntu. DO"
-tags: [notes, deploy, rails, ubuntu]
+layout: post
+title: Deploying rails app to DO ubuntu droplet with Nginx/Passenger/Mina
+category: posts
 ---
 
-Here's how I deployed a simple rails app to DO droplet with Ubuntu 14.4. 
+$10 droplet or higher is preferable.
 
-It's preferable to buy $10 droplet or higher.
+---
 
-[Setup ubuntu server [do guide]](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04)
+##Setup ubuntu server
 
-[Short list of commands](/do-ubuntu-setup-shortlist/)
+Ubuntu 14.4 was used
+
+[Setup ubuntu server](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04)
+
+Here's a list of commans on how to make ubuntu initial setup on DO.
+
+{% highlight bash %}
+ssh root@SERVER_IP_ADDRESS
+adduser demo
+gpasswd -a demo sudo
+
+ssh-keygen
+cat ~/.ssh/id_rsa.pub
+#copy the output
+
+su - demo
+mkdir .ssh
+chmod 700 .ssh
+nano .ssh/authorized_keys
+#paste public key and save
+chmod 600 .ssh/authorized_keys
+exit
+
+nano /etc/ssh/sshd_config
+# edit set PermitRootLogin from yes to no
+PermitRootLogin no
+service ssh restart
+
+{% endhighlight %}
+
+###Firewall
+
+{% highlight bash %}
+sudo ufw allow ssh
+sudo ufw allow 4444/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw allow 25/tcp
+sudo ufw show added
+sudo ufw enable
+{% endhighlight %}
+
+###Timezones
+
+{% highlight bash %}
+sudo dpkg-reconfigure tzdata
+sudo apt-get update
+sudo apt-get install ntp
+{% endhighlight %}
+
+
+###Swap File
+
+{% highlight bash %}
+sudo fallocate -l 1G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+sudo sh -c 'echo "/swapfile none swap sw 0 0" >> /etc/fstab'
+{% endhighlight %}
+
+---
 
 [Phusion passenger library [guide]](https://www.phusionpassenger.com/library/walkthroughs/deploy/ruby/digital_ocean/nginx/oss/install_language_runtime.html)
 
@@ -56,7 +118,7 @@ sudo apt-get install nginx-full passenger
 
 {% highlight bash %}
 passenger-config --ruby-command
-# copy ruby path for nginx 
+# copy ruby path for nginx
 # To use in Nginx : passenger_ruby /usr/local/rvm/gems/ruby-2.2.2/wrappers/ruby
 
 # then update it in /etc/nginx/nginx.conf
@@ -72,7 +134,8 @@ sudo service nginx restart
 {% endhighlight %}
 
 
-###Check installation [Passenger library [check installation]](https://www.phusionpassenger.com/library/walkthroughs/deploy/ruby/digital_ocean/nginx/oss/trusty/install_passenger.html#step-3:-check-installation)
+##Validating installation
+[Passenger library](https://www.phusionpassenger.com/library/walkthroughs/deploy/ruby/digital_ocean/nginx/oss/trusty/install_passenger.html#step-3:-check-installation)
 
 To validate installations of passenger, run the following command:
 
@@ -159,12 +222,9 @@ Inside `/etc/nginx/sites-enabled/` create a config file of your website `myapp.c
 server {
     listen 80;
     listen [::]:80;
-
     server_name domain_name.com;
-
     # Tell Nginx and Passenger where your app's 'public' directory is
     root /var/www/myapp/current/public;
-
     # Turn on Passenger
     passenger_enabled on;
     passenger_ruby /home/username/.rvm/gems/ruby-2.2.2/wrappers/ruby;
