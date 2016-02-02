@@ -1,7 +1,3 @@
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
-
 permalink: /posts/:title
 
 gems:
@@ -22,3 +18,5 @@ linked_in: https://www.linkedin.com/in/kirill-beletskiy-63a948102
 twitter: railsr7
 
 google_analytics_tracking_id: UA-55372257-1
+
+exclude: [".gitignore", "README.md", "Gemfile", "Gemfile.lock"]

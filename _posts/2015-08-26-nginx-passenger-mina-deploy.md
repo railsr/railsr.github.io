@@ -14,8 +14,6 @@ Ubuntu 14.4 was used
 
 [Setup ubuntu server](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04)
 
-Here's a list of commans on how to make ubuntu initial setup on DO.
-
 {% highlight bash %}
 ssh root@SERVER_IP_ADDRESS
 adduser demo
