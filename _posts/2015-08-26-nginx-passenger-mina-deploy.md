@@ -8,7 +8,7 @@ $10 droplet or higher is preferable.
 
 ---
 
-##Setup ubuntu server
+## Setup ubuntu server
 
 Ubuntu 14.4 was used
 
@@ -38,7 +38,7 @@ service ssh restart
 
 {% endhighlight %}
 
-###Firewall
+### Firewall
 
 {% highlight bash %}
 sudo ufw allow ssh
@@ -50,7 +50,7 @@ sudo ufw show added
 sudo ufw enable
 {% endhighlight %}
 
-###Timezones
+### Timezones
 
 {% highlight bash %}
 sudo dpkg-reconfigure tzdata
@@ -59,7 +59,7 @@ sudo apt-get install ntp
 {% endhighlight %}
 
 
-###Swap File
+### Swap File
 
 {% highlight bash %}
 sudo fallocate -l 1G /swapfile
@@ -81,7 +81,7 @@ sudo apt-get install nodejs
 sudo apt-get install -y curl gnupg build-essential
 {% endhighlight %}
 
-##rvm
+## rvm
 
 {% highlight bash %}
 curl -L https://get.rvm.io | bash -s stable
@@ -98,7 +98,7 @@ rvm use 2.2.2 --default
 echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 {% endhighlight %}
 
-##Nginx and Passenger
+## Nginx and Passenger
 
 {% highlight bash %}
 # passenger
@@ -132,7 +132,7 @@ sudo service nginx restart
 {% endhighlight %}
 
 
-##Validating installation
+## Validating installation
 [Passenger library](https://www.phusionpassenger.com/library/walkthroughs/deploy/ruby/digital_ocean/nginx/oss/trusty/install_passenger.html#step-3:-check-installation)
 
 To validate installations of passenger, run the following command:
@@ -149,7 +149,7 @@ sudo passenger-memory-stats
 {% endhighlight %}
 
 
-##PostgreSQL
+## PostgreSQL
 
 [[do article]](https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-ruby-on-rails-application-on-ubuntu-14-04)
 
@@ -179,7 +179,7 @@ GRANT ALL PRIVILEGES ON DATABASE database_name to pguser;
 \q
 {% endhighlight %}
 
-##Mina
+## Mina
 
 A lot of info can be found in the repo of the gem.
 [mina github](https://github.com/mina-deploy/mina)
@@ -209,7 +209,7 @@ In my case, they are: `database.yml`, `secrets.yml`, `application.yml`
 
 Then run `mina deploy` or `mina deploy --verbose`
 
-##Configure Nginx
+## Configure Nginx
 
 If you want to host a few apps on your server you can create a separate nginx config file for your app. Or just use the default. `/etc/nginx/sites-enabled/default`
 

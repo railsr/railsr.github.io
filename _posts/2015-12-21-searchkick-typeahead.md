@@ -43,7 +43,7 @@ searchkick autocomplete: ['title']
 {% endhighlight %}
 
 {% highlight erb %}
-<%#form%>
+<!-- form -->
 
   <%= form_tag builds_path, method: :get, class:"input-group" do %>
     <%= text_field_tag :query, params[:query], class: "form-control typeahead", id: "build_search"%>
@@ -51,10 +51,8 @@ searchkick autocomplete: ['title']
       <%= button_tag "Go!", class:"btn btn-primary" %>
     </span>
   <% end %>
-
-
-
 {% endhighlight %}
+
 
 {% highlight javascript %}
 
