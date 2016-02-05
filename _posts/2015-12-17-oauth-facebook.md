@@ -69,8 +69,7 @@ devise_for :users, controllers: { omniauth_callbacks: "callbacks" }
 {% endhighlight %}
 
 {% highlight erb %}
-
-<%#_links.html.erb%>
+<!-- _links.html.erb -->
 
 <%- if devise_mapping.omniauthable? %>
   <%- resource_class.omniauth_providers.each do |provider| %>
