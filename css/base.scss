@@ -140,8 +140,13 @@ a {
   hr {
     border: 0;
     height: 6px;
-    background-image: url("/images/hr.png");
-    background-repeat: repeat-x;
+    // default
+    // background-image: url("/images/hr.png");
+    // background-repeat: repeat-x;
+    // orange
+    // background: repeating-radial-gradient( circle, #FB8C00, #FF9800 10px, #FFA726 10px, #FFB74D 20px );
+    // blue
+    background: repeating-radial-gradient( circle, #039BE5, #03A9F4 10px, #29B6F6 10px, #4FC3F7 20px );
     margin: 2em 3em;
   }
   li {
