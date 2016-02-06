@@ -7,6 +7,7 @@ body {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
+  border-top: 8px solid #03A9F4;
 }
 
 a {
@@ -21,6 +22,7 @@ a {
   font-family: Helvetica, sans-serif;
   height: 100%;
   background: #222A30;
+  // border-right: 8px solid #03A9F4; looks good when there's a lot of posts
   a {
     text-decoration: none;
   }
