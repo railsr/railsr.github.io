@@ -2,7 +2,7 @@
 layout: page
 category: posts
 draft: true
-permalink: /links/
+permalink: /links
 ---
 
 ### Ruby
