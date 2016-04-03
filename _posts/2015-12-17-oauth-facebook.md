@@ -5,7 +5,7 @@ category: posts
 ---
 Quick notes on how to add facebook authentication to a rails app.
 
-![oauth-fb-devise]({{site.baseurl }}/public/post_files/2015/oauth-fb-d.png)
+![oauth-fb-devise]({{site.baseurl }}/public/post_files/oauth-fb-d.png)
 
 {% highlight ruby %}
 
