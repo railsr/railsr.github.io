@@ -1,0 +1,25 @@
+- Kirill Beletskiy
+
+Contacts:
+
+- railsr@yahoo.com
+
+Skills:
+
+- Ruby on Rails
+- html / css / javascript
+- Twitter Bootstrap
+- Jekyll
+- Git
+
+Links:
+
+- https://github.com/railsr
+- http://railsr.github.io/
+- http://stackoverflow.com/users/1231365/railsr
+- https://www.upwork.com/o/profiles/users/_~01c5fd62e924bf5de8/
+- https://www.utest.com/profile/railsr
+
+Recent Projects:
+
+- https://github.com/railsr/hqx86
