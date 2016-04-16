@@ -5,6 +5,10 @@ draft: true
 permalink: /links
 ---
 
+- [Shared](https://drive.google.com/open?id=0B8Z7077WIz-qMWFJaWNGaHlVUEk)
+
+---
+
 - [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide)
 - [Awesome Ruby](http://awesome-ruby.com/)
 - [Rails Style Guide](https://github.com/bbatsov/rails-style-guide)
