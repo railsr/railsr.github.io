@@ -26,12 +26,6 @@ Email: railsr@yahoo.com
 - https://www.upwork.com/o/profiles/users/_~01c5fd62e924bf5de8/
 
 
-## Recent Projects:
-
-- https://github.com/railsr/hqx86
-- https://github.com/railsr/tm-assignment
-
-
 ## About:
 
 I started learning C#/asp.net mvc after some practice with C/C++
@@ -41,3 +35,8 @@ After switching from windows to macos I started learning ruby and later rails.
 Since then, I have about 2 year of experience with ror.
 
 Interested in javascript. Started learning angular2. Have plans to try java :)
+
+## Recent Projects:
+
+- https://github.com/railsr/hqx86
+- https://github.com/railsr/tm-assignment

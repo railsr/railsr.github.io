@@ -13,5 +13,18 @@
       color: #333;
       font-family: Helvetica, sans-serif;
     }
+    p{
+      margin-bottom: 16px;
+    }
+  }
+
+  .res-links{
+    margin: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    a{
+      font-size: 12px;
+    }
   }
 }
