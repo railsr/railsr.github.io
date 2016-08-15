@@ -28,13 +28,6 @@ Email: railsr@yahoo.com
 - Haml
 - RSpec/Capybara
 
-
-## Недавние Проекты:
-
-- https://github.com/railsr/hqx86
-- https://github.com/railsr/tm-assignment
-
-
 ## О себе:
 
 Опыт работы с ror примерно 2 года.
@@ -47,3 +40,9 @@ Email: railsr@yahoo.com
 В данный момент интересен Javascript.
 Начал изучать angular2.
 Есть в планах попробовать java :)
+
+
+## Недавние Проекты:
+
+- https://github.com/railsr/hqx86
+- https://github.com/railsr/tm-assignment
