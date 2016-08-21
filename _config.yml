@@ -10,21 +10,21 @@ permalink: /posts/:title
 gems:
   - jekyll-sitemap
 
-name: Name Surname #your name
-url: '' #site url
-description: Site description here # description
-email: john@doe.com #your email
+name: Kirill Beletskiy
+url: http://railsr.github.io
+description: My blog for notes and stuff...
+email: railsr@yahoo.com
 
 disqus:
-  shortname: "test" #disquss username
+  shortname: "railsr"
 github:
-  un: 'your_username' #github username
-  owner_url: '' #site url
-  owner_gravatar_url: 'https://github.com/identicons/sdf.png' #gravatar url
-stack_overflow: '' #stack overflow link
-linked_in: '' #linked in link
-twitter: 'johnd' #twitter link
+  un: railsr
+  owner_url: https://github.com/railsr
+  owner_gravatar_url: https://avatars2.githubusercontent.com/u/5272402?v=3&s=460
+stack_overflow: http://stackoverflow.com/users/1231365/railsr
+linked_in: https://www.linkedin.com/in/kirill-beletskiy-63a948102
+twitter: railsr7
 
-google_analytics_tracking_id: UA-11111111-1 #analitics code
+google_analytics_tracking_id: UA-55372257-1
 
 exclude: [".gitignore", "README.md", "Gemfile", "Gemfile.lock"]
