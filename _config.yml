@@ -12,6 +12,7 @@ gems:
 
 name: Kirill Beletskiy
 url: http://railsr.github.io
+baseurl: ""
 description: My blog for notes and stuff...
 email: railsr@yahoo.com
 
