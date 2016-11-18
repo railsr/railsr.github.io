@@ -11,7 +11,7 @@ gems:
   - jekyll-sitemap
 
 name: Kirill Beletskiy
-url: http://railsr.github.io
+url: http://kirqe.github.io
 baseurl: ""
 description: My blog for notes and stuff...
 email: railsr@yahoo.com
@@ -19,10 +19,10 @@ email: railsr@yahoo.com
 disqus:
   shortname: "railsr"
 github:
-  un: railsr
-  owner_url: https://github.com/railsr
+  un: kirqe
+  owner_url: https://github.com/kirqe
   owner_gravatar_url: https://avatars2.githubusercontent.com/u/5272402?v=3&s=460
-stack_overflow: http://stackoverflow.com/users/1231365/railsr
+stack_overflow: http://stackoverflow.com/users/1231365/kirqe
 linked_in: https://www.linkedin.com/in/kirill-beletskiy-63a948102
 twitter: railsr7
 
