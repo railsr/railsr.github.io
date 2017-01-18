@@ -1,7 +1,7 @@
 ---
 layout: resume
 title: Resume-ru
-permalink: 'public/resume-ru'
+permalink: docs/resume-ru
 ---
 
 # Кирилл Белецкий
@@ -28,21 +28,4 @@ Email: railsr@yahoo.com
 - Haml
 - RSpec/Capybara
 
-## О себе:
-
-Опыт работы с ror примерно 2 года.
-
-Какое-то время изучал c# и asp.net после небольшой практики с C/C++.
-Не сильно нравилось, возможно из-за малого опыта.
-
-После перехода на macos познакомился с ruby, rails.
-
-В данный момент интересен Javascript.
-Начал изучать angular2.
-Есть в планах попробовать java :)
-
-
-## Недавние Проекты:
-
-- https://github.com/railsr/hqx86
-- https://github.com/railsr/tm-assignment
+## Edit later
