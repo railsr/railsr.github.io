@@ -13,7 +13,7 @@ Email: railsr@yahoo.com
 
 Весь опыт что имеется на данный момент, это активность на github и upwork:
 
-- https://github.com/railsr
+- https://github.com/kirqe
 - https://www.upwork.com/o/profiles/users/_~01c5fd62e924bf5de8/
   <br/><sub>(часть проектов не отображается)</sub>
 
@@ -21,11 +21,10 @@ Email: railsr@yahoo.com
 ## Знаком/использовал:
 
 - Ruby on Rails
-- html / css / javascript
-- Twitter Bootstrap
+- html(erb, haml) / css(scss, bootstrap) / javascript
 - Jekyll
 - Git
-- Haml
+- Heroku/DO
 - RSpec/Capybara
 
-## Edit later
+Edit later...

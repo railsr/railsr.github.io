@@ -12,12 +12,11 @@ Email: railsr@yahoo.com
 ## Skills:
 
 - Ruby on Rails
-- html / css / javascript
-- Twitter Bootstrap
+- html(erb, haml) / css(scss, bootstrap) / javascript
 - Jekyll
 - Git
-- Haml
+- Heroku/DO
 - RSpec/Capybara
 
 
-## Edit later
+Edit later...
