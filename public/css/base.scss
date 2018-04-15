@@ -35,26 +35,24 @@ a {
   .section {
     display: flex;
     align-items: center;
-  }
-
-  .section.left {
-    justify-content: flex-start;
-    flex-grow: 1;
-  }
-
-  .section.right {
-    justify-content: flex-end;
-    flex-grow: 8;
+    &.left {
+      justify-content: flex-start;
+      flex-grow: 1;
+    }
+    &.right {
+      justify-content: flex-end;
+      flex-grow: 8;
+    }
   }
 
   ul {
     padding: 0;
-  }
 
-  ul li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 5px;
+    li {
+      list-style: none;
+      display: inline-block;
+      margin-left: 5px;
+    }
   }
 }
 
