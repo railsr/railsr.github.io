@@ -8,7 +8,7 @@ kramdown:
 permalink: /posts/:title
 
 gems:
-  - jekyll-sitemap
+  # - jekyll-sitemap
 
 name: Kirill Beletskiy
 url: http://kirqe.github.io

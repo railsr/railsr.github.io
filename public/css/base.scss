@@ -16,8 +16,8 @@ a {
 .nav {
   max-width: 650px;
   height: 30px;
-  margin: 5px 20px;
-  margin-left: 20px;
+  // margin: 0 15px;
+  margin: 0 15px 0 15px;
   display: flex;
   flex-direction: row;
   padding: 5px 0;
@@ -59,63 +59,9 @@ a {
   }
 }
 
-.sidebar {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 70px;//80px;
-  font-family: Helvetica, sans-serif;
-  height: 100%;
-  background: #222A30;
-  a {
-    text-decoration: none;
-  }
-  img {
-    padding: 0 3px;
-    border: 0;
-  }
-
-  .meta {
-    font-size: 18px;
-    a {
-      margin-left: 0px;
-      color: white;
-      &:hover {
-        color: #2196F3;
-      }
-    }
-    margin-left: 2px;
-    .icon {
-      margin-right: 6px;
-    }
-  }
-  .sections {
-    margin: 15px 0 0 4px;
-    a {
-      padding: 3px 0;
-      color: white;
-      font-weight: bold;
-      font-size: 12px;
-      display: block;
-      &:hover {
-        color: #2196F3;
-      }
-    }
-    ul {
-      margin: 0;
-      padding: 0;
-    }
-    li {
-      list-style: none;
-      margin-bottom: 7px;
-    }
-  }
-}
-
 .content {
   max-width: 650px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 15px 0 15px;
   margin-bottom: 50px;
   h1, h2, h3, h4 {
     color: #333;
