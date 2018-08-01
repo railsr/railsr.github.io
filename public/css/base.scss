@@ -36,15 +36,13 @@ a {
     display: flex;
     align-items: center;
     &.left {
-      justify-content: flex-start;
       flex-grow: 1;
       a {
         display: flex;
       }
     }
     &.right {
-      justify-content: flex-end;
-      flex-grow: 8;
+      
     }
   }
 
