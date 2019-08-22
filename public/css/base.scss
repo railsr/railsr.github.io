@@ -36,15 +36,14 @@ a {
     display: flex;
     align-items: center;
     &.left {
-      justify-content: flex-start;
       flex-grow: 1;
       a {
+        // helps with aligning img with text in the same container
         display: flex;
       }
     }
     &.right {
-      justify-content: flex-end;
-      flex-grow: 8;
+
     }
   }
 
