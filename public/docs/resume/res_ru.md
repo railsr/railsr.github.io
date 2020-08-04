@@ -1,5 +1,5 @@
 ---
 layout: resume
-title: Resume-ru
-permalink: docs/resume-ru
+title: Res-ru
+permalink: d/res-ru
 ---

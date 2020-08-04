@@ -13,11 +13,12 @@ gems:
 name: Kirill Beletskiy
 url: http://kirqe.github.io
 baseurl: ""
-description: My blog for notes and stuff...
-email: railsr@yahoo.com
+description: Blog for notes and stuff...
+email: kirqe@yahoo.com
+tg: https://t.me/kirqe
 
 disqus:
-  shortname: "railsr"
+  shortname: "kirqe"
 github:
   un: kirqe
   owner_url: https://github.com/kirqe

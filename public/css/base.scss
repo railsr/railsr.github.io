@@ -6,22 +6,26 @@
 body {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   margin: 0;
-  -webkit-font-smoothing: antialiased;
+  // -webkit-font-smoothing: antialiased;
 }
 
 a {
-  color: #2196F3;
+  color: #8888E4;
+}
+
+.nav, .content{
+  max-width: 700px;
 }
 
 .nav {
-  max-width: 650px;
+  // position: relative;
   height: 30px;
   // margin: 0 15px;
-  margin: 0 15px 0 15px;
+  margin: 0 15px 15px 15px;
   display: flex;
   flex-direction: row;
-  padding: 5px 0;
-  border-bottom: 2px dashed #eee;
+  padding: 10px 0;
+  // border-bottom: 2px dashed #eee;
 
   .avatar {
     border-radius: 3px;
@@ -29,7 +33,7 @@ a {
   }
 
   a {
-    color: #777777;
+    color: #586777;
   }
 
   .section {
@@ -58,16 +62,37 @@ a {
   }
 }
 
+// SO <3
+.nav {
+  --p:10px; /* width of the pattern */
+  --w:4px;  /* width of the gap inside the pattern */
+  --h:2px;  /* height of line */
+
+  background: 
+    repeating-linear-gradient(90deg, #8888E4 0 calc(100% - var(--w)), transparent 0 100%) 0 100% / var(--p) var(--h) repeat-x;
+    // repeating-linear-gradient(90deg, #8888E4 0 calc(100% - var(--w)), #5656e6 0 100%) 0 100% / var(--p) var(--h) repeat-x;    
+  animation: move 0.3s linear infinite;
+}
+
+@keyframes move {
+  to {
+    background-position: var(--p) 100%;
+  }
+}
+
+
 .content {
-  max-width: 650px;
+  color: #586777;
+
   margin: 0 15px 0 15px;
   margin-bottom: 50px;
   h1, h2, h3, h4 {
-    color: #333;
-    font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+    color: #586777;;
+    // font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+    font-family:  Helvetica, sans-serif;
     font-weight: 400;
     a {
-      color: #111;
+      color: #586777;
       text-decoration: none;
     }
   }
@@ -80,22 +105,23 @@ a {
     margin-bottom: 15px;
   }
   h3 {
-    color: #777;
+    color: #586777;
     font-size: 25px;
     padding-bottom: 5px;
     margin-bottom: 10px;
   }
   p {
-    font-size: 16px;
+    font-size: 1.2em;
     margin-top: 0;
     margin-bottom: 1.2em;
-    line-height: 1.7em;
+    line-height: 1.5em;
     code {
-      font-size: 12px;
-      background-color: #FFECEA;
+      font-size: 0.8em;
+      background-color: #B7B7E6;
+      color: #fff;
       // border: 1px solid #777777;
       border-radius: 3px;
-      padding: 2px 3px;
+      padding: 3px 4px;
     }
   }
   img {
@@ -106,7 +132,7 @@ a {
   hr {
     border: 0;
     height: 6px;
-    background: repeating-radial-gradient( circle, #039BE5, #03A9F4 10px, #29B6F6 10px, #4FC3F7 20px );
+    background: repeating-radial-gradient( circle, #8888E4, #8888E4 10px, #8888E4 10px, #8888E4 20px );
     margin: 2em 3em;
   }
   li {
@@ -132,10 +158,11 @@ a {
   }
   .byline {
     margin-bottom: 17px;
-    font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+    // font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     padding-left: 0px;
-    font-size: 17px;
-    color: #777;
+    font-size: 1em;
+    color: #586777;
   }
   .aside {
     background-color: #eeeeee;
@@ -154,11 +181,11 @@ a {
       padding: 0;
     }
     li {
-      font-size: 12px;
+      font-size: .9em;
       list-style: none;
       padding: 5px 0;
       margin: 0;
-      color: #777777;
+      color: #586777;
       border-bottom: 1px solid #eee;
 
       span {
