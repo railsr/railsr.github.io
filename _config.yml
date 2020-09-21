@@ -11,7 +11,7 @@ gems:
   - jekyll-sitemap
 
 name: Kirill Beletskiy
-url: http://kirqe.github.io
+url: https://kirqe.be
 baseurl: ""
 description: Blog for notes and stuff...
 email: kirqe@yahoo.com
